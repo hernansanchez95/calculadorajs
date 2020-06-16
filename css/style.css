@@ -1,0 +1,89 @@
+.calculadora{
+    width: fit-content;
+    margin: auto;
+    background-color: #CBEEE8;
+    border-radius: 5px;
+}
+
+.pantalla{
+    padding: 5px;
+    background-color: #F6FDFC;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 60px;
+}
+
+.teclas{
+    display: flex;
+}
+
+.operaciones button{
+    display: block;
+    width: 95px;
+    height: 75px;
+    font-size: 25px;
+    margin: 6px;
+}
+
+
+.numeros button{
+    width: 95px;
+    height: 75px;
+    font-size: 20px;
+}
+
+.numeros div{
+    text-align: center;
+}
+
+.grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+.grow:hover, .grow:focus, .grow:active {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.equal button{
+    width: 98%;
+    height: 75px;
+    margin: 5px 0px 0px 4px;
+    font-size: 30px;
+}
+
+@media all and (max-width:600px){
+
+    .calculadora{
+        width: 360px;
+    }
+    .numeros button{
+        width:70px;
+    }
+
+    .operaciones button{
+        width: 70px;
+    }
+}
+
+
+@media all and (min-width: 601px) and (max-width: 767px){
+    .calculadora{
+        width: 768px;
+    }
+
+    .numeros button{
+        width: 115px;
+    }
+
+    .operaciones button{
+        width: 115px;
+    }
+}
